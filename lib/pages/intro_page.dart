@@ -6,20 +6,17 @@ class IntroPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Container(
-        color: const Color(0xFFFFFCFE),
-        width: double.infinity,
-        height: double.infinity,
+    return Scaffold(
+      backgroundColor: const Color(0xFFFFFCFE), 
+      body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start, 
           children: [
-         
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, vertical: 32.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  
                   CircleIconButton(
                     imagePath: 'assets/images/menu_icon.png',
                     imageWidth: 20,
@@ -33,7 +30,6 @@ class IntroPage extends StatelessWidget {
                     height: 59,
                   ),
 
-                
                   CircleIconButton(
                     imagePath: 'assets/images/bag_icon.png',
                     imageWidth: 23,
@@ -41,20 +37,18 @@ class IntroPage extends StatelessWidget {
                   ),
                 ],
               ),
-
             ),
 
-            
-Padding(
+            Padding(
               padding: const EdgeInsets.only(left: 29.0, top: 130.0),
               child: Text(
                 "Our way of loving you back",
                 style: const TextStyle(
                   color: Colors.black,
                   fontSize: 25,
-                  fontWeight: FontWeight.w600, 
-                  height: 43 / 25, 
-                  fontFamily: 'Raleway', 
+                  fontWeight: FontWeight.w600,
+                  height: 43 / 25,
+                  fontFamily: 'Raleway',
                 ),
               ),
             ),
